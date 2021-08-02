@@ -194,56 +194,8 @@ blockquote p {
 .single-page-wrap {
 	padding-top: 80px;
 }
-.single-page-decor {
-	position: fixed;
-	top: 0;
-	left: 80px;
-	right: 0;
-	height: 80px;
-	z-index: 14;
-	background: #2D2D32;
-	-webkit-transform: translate3d(0, 0, 0);
-}
-.single-page-fixed-row {
-	position: fixed;
-	top: 0;
-	left: 80px;
-	right: 0;
-	height: 80px;
-	z-index: 14;
-	-webkit-transform: translate3d(0, 0, 0);
-}
-.single-page-fixed-row-link {
-	float: left;
-	margin-left: 50px;
-	text-align: left;
-	top: 32px;
-}
-.single-page-fixed-row-link i {
-	padding-right: 20px;
-}
-.single-page-fixed-row-link span {
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 10px;
-	letter-spacing: 2px;
-	color: #8B8B8B;
-	position: relative;
-}
-.single-page-fixed-row-link span:before {
-	content: '';
-	position: absolute;
-	left: 70%;
-	right: -80px;
-	top: -12px;
-	bottom: -12px;
-	background: rgba(255, 255, 255, 0.081);
-	-webkit-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-.single-page-fixed-row-link:hover span:before {
-	left: 20%;
-}
+
+
 .respimg {
 	width: 100%;
 	height: auto;
@@ -646,6 +598,10 @@ nav.nav-inner {
 	padding-top: 30px;
 	border-top: 1px dotted rgba(255, 255, 255, 0.09);
 }
+.nav-scroll{
+	width: 100%;
+	 background: #2D2D32;
+}
 .scroll-nav-wrap {
 	position: absolute;
 	bottom: 0;
@@ -679,10 +635,11 @@ nav.nav-inner {
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 }
+
 .scroll-nav li a:after,
 .scroll-nav li a:before,
-.fsp-filter .gallery-filters a:before,
-.fsp-filter .gallery-filters a:after {
+.nav-1 .gallery-filters a:before,
+.nav-1 .gallery-filters a:after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -692,19 +649,19 @@ nav.nav-inner {
 	margin-top: -1px;
 }
 .scroll-nav li a:before,
-.fsp-filter .gallery-filters a:before {
+.nav-1 .gallery-filters a:before {
 	background: rgba(255, 255, 255, 0.091);
 	z-index: 1;
 }
 .scroll-nav li a:after,
-.fsp-filter .gallery-filters a:after {
+.nav-1 .gallery-filters a:after {
 	width: 0;
 	z-index: 2;
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
 }
 .scroll-nav a.act-scrlink:after,
-.fsp-filter .gallery-filters a.gallery-filter-active:after {
+.nav-1 .gallery-filters a.gallery-filter-active:after {
 	width: 15px;
 }
 .full-height {
@@ -716,10 +673,8 @@ nav.nav-inner {
 	position: fixed;
 	background: #2A2A2E;
 	z-index: 2;
-	left: 80px;
 	bottom: 0;
 	right: 0;
-	z-index: 2;
 	overflow: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
 }
@@ -2453,15 +2408,14 @@ section.parallax-section .section-title:before {
 
 /* ------Portfolio------------------------------------------------------------ */
 
-.fsp-filter {
+.nav-1 {
 	position: fixed;
-	left: 80px;
 	top: 0;
 	height: 80px;
-	z-index: 15;
+	z-index: 1000;
 	-webkit-transform: translate3d(0, 0, 0);
 }
-.fsp-filter .filter-title {
+.nav-1 .nav-1 {
 	float: left;
 	height: 100%;
 	position: relative;
@@ -2470,7 +2424,7 @@ section.parallax-section .section-title:before {
 	padding-top: 28px;
 	border-right: 1px solid rgba(255, 255, 255, 0.11);
 }
-.fsp-filter .filter-title span {
+.nav-1 .nav-1 span {
 	float: left;
 	margin-left: 20px;
 	position: relative;
@@ -2482,19 +2436,19 @@ section.parallax-section .section-title:before {
 	letter-spacing: 2px;
 	color: #8B8B8B;
 }
-.fsp-filter .filter-title i {
+.nav-1 .nav-1 i {
 	float: left;
 	color: #8B8B8B;
 	position: relative;
 	top: 8px;
 }
-.fsp-filter .gallery-filters {
+.nav-1 .gallery-filters {
 	float: left;
 	margin-left: 40px;
 	position: relative;
 	top: 22px;
 }
-.fsp-filter .gallery-filters a {
+.nav-1 .gallery-filters a {
 	float: left;
 	padding: 13px 35px;
 	color: #8B8B8B;
@@ -2510,6 +2464,10 @@ section.parallax-section .section-title:before {
 	float: left;
 	width: 100%;
 	position: relative;
+	margin-top: 79px;
+}
+.gallery-filter {
+	font-size: 16px !important;
 }
 .grid-item-holder {
 	float: left;
@@ -2563,12 +2521,12 @@ section.parallax-section .section-title:before {
 .gallery-item:hover img {
 	opacity: 0.7;
 }
-.fsp-filter .folio-counter {
+.nav-1 .folio-counter {
 	float: left;
 	position: relative;
 	font-weight: 600;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 16px;
 	letter-spacing: 2px;
 	color: #8B8B8B;
 	height: 80px;
@@ -2578,13 +2536,13 @@ section.parallax-section .section-title:before {
 	padding-left: 30px;
 	font-family: 'Poppins', sans-serif;
 }
-.fsp-filter .folio-counter div {
+.nav-1 .folio-counter div {
 	float: left;
 	margin-right: 20px;
 	position: relative;
 	width: 20px;
 }
-.fsp-filter .folio-counter div:first-child:before {
+.nav-1 .folio-counter div:first-child:before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -2593,7 +2551,7 @@ section.parallax-section .section-title:before {
 	height: 1px;
 	background: rgba(255, 255, 255, 0.31);
 }
-.fsp-filter .all-album:before {
+.nav-1 .all-album:before {
 	display: none;
 }
 .box-item {
@@ -6207,7 +6165,7 @@ section.parallax-section .section-title:before {
 	display: none;
 }
 @media only screen and (max-width: 1220px) {
-	.filter-title {
+	.nav-1 {
 		display: none;
 	}
 }
@@ -6386,10 +6344,10 @@ section.parallax-section .section-title:before {
 	.hidden-info-wrap-bg {
 		display: none;
 	}
-	.filter-title {
+	.nav-1 {
 		display: none;
 	}
-	.fsp-filter {
+	.nav-1 {
 		position: relative;
 		float: left;
 		left: 0;
