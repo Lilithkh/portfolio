@@ -376,14 +376,14 @@ function initSolonick() {
             $grid.imagesLoaded(function () {
                 $grid.isotope("layout");
             });
-            $(".gallery-filters").on("click", "a.gallery-filter", function (b) {
+            $(".header-menu").on("click", "a.gallery-filter", function (b) {
                 b.preventDefault();
                 var c = $(this).attr("data-filter"),
                     d = $(this).text();
                 $grid.isotope({
                     filter: c
                 });
-                $(".gallery-filters a").removeClass("gallery-filter-active");
+                $(".header-menu a").removeClass("gallery-filter-active");
                 $(this).addClass("gallery-filter-active");
             });
             var gat = $(".gallery-filter-active").text();
