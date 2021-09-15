@@ -160,6 +160,7 @@ blockquote p {
 	float: left;
 	width: 100%;
 	position: relative;
+	padding-bottom: 40px;
 }
 .hero-section {
 	padding: 250px 0 450px;
