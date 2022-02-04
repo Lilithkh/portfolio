@@ -3137,6 +3137,7 @@ section.parallax-section .section-title:before {
 	float: left;
 	position: relative;
 	z-index: 20;
+	font-weight: bold;
 }
 .right-parallax-header {
 	float: right;
@@ -3149,6 +3150,7 @@ section.parallax-section .section-title:before {
 	color: #fff;
 	font-size: 10px;
 	letter-spacing: 2px;
+	font-weight: bold;
 }
 .content-nav {
 	float: left;
