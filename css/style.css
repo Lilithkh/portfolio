@@ -4061,6 +4061,7 @@ section.parallax-section .section-title:before {
 	text-align: left;
 	float: left;
 	width: 100%;
+	height: 365px;
 	padding: 35px 40px 30px 40px;
 	background: #f9f9f9;
 	border: 1px solid #eee;
