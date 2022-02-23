@@ -6204,6 +6204,13 @@ section.parallax-section .section-title:before {
 .scroll-nav-wrap-btn {
 	display: none;
 }
+
+
+.prev , .next {
+	color: white;
+	font-size: 20px;
+	border: none;
+}
 @media only screen and (max-width: 1220px) {
 	.nav-1 {
 		display: none;
