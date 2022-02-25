@@ -18,7 +18,7 @@
 ++ 404 ++
 ++ Responsive ++
 
- 
+
 /*-------------Fonts---------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Poppins:400,500,600,700,800,900|Titillium+Web:400,600,700&subset=cyrillic,cyrillic-ext,devanagari,latin-ext,vietnamese');
@@ -40,15 +40,8 @@ body {
 	color: #000;
 	font-family: 'Titillium Web', sans-serif;
 }
-@-o-viewport {
-	width: device-width;
-}
-@-ms-viewport {
-	width: device-width;
-}
-@viewport {
-	width: device-width;
-}
+
+
 /* ---------Page preload--------------------------------------*/
 
 .loader-wrap {
@@ -109,6 +102,7 @@ body {
 	}
 }
 /*--------------Typography--------------------------------------*/
+
 p {
 	font-size: 14px;
 	line-height: 24px;
@@ -1084,6 +1078,7 @@ p.interact,
 	margin-bottom: 50px;
 }
 /*--------------hero--------------------------------------*/
+/*noinspection ALL*/
 .impulse-wrap {
 	position: absolute;
 	top: 0;
@@ -1912,7 +1907,7 @@ section.parallax-section .section-title:before {
     font-weight: 600;
     font-size: 14px;
     position: relative;
-	color: #999;
+	color: #666;
 }
 .section-title h3:before {
 	content: '';
@@ -1972,12 +1967,11 @@ section.parallax-section .section-title:before {
 	float: left;
 	width: 100%;
 	padding-top: 10px;
-	color: #999;
+	color: #666;
     font-size: 11px;
     line-height: 24px;
     padding-bottom: 10px;
     font-weight: 500;
-    color: #878C9F;
     font-family: 'Poppins', sans-serif;
 	text-align:left;
 }
@@ -2245,7 +2239,7 @@ section.parallax-section .section-title:before {
 	font-size: 18px;
 	padding-bottom: 18px;
 	position: relative;
-	color: #999;
+	color: #2A2A2E;
 }
 .features-box h3:before {
 	content: '';
@@ -3509,7 +3503,7 @@ section.parallax-section .section-title:before {
 }
 .pr-list li span {
 	float: left;
-	font-weight: 400px;
+	font-weight: 400;
 	color: #999;
 	min-width: 120px;
 }
@@ -5565,7 +5559,7 @@ section.parallax-section .section-title:before {
 	padding-bottom:10px;
 }
 #message p strong {
-	font-weight: 800px;
+	font-weight: 800;
 	color:#000;
 }
 .verify-text {
@@ -6206,10 +6200,13 @@ section.parallax-section .section-title:before {
 }
 
 
-.prev , .next {
+.next , .prev {
 	color: white;
-	font-size: 20px;
-	border: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600 ;
+
+
 }
 @media only screen and (max-width: 1220px) {
 	.nav-1 {
@@ -6264,7 +6261,7 @@ section.parallax-section .section-title:before {
 	.scroll-nav-wrap {
 		left: 0;
 	}
-	.half-slider-wrap .sarr-contr {
+	.half-slider-wrap  {
 		bottom: 120px;
 	}
 	.slider-nav-counter {
@@ -6288,7 +6285,7 @@ section.parallax-section .section-title:before {
 	}
 	.nav-button {
 		float: right;
-		margin-right: 140px;
+		margin-right: 32px;
 		margin-top: 24px;
 	}
 	.show-share {
@@ -6308,17 +6305,12 @@ section.parallax-section .section-title:before {
 	.process-wrap li {
 		width: 50%;
 	}
-	.piechart {
-		width: 50% !important;
-	}
-	.piechart-holder h4,
+
 	.hidden-info-wrap {
 		float: left;
 		width: 100%;
 	}
-	.skillbar-bg {
-		width: 100%;
-	}
+
 	.skill-bar-percent {
 		margin-right: 0;
 	}
@@ -6461,7 +6453,7 @@ section.parallax-section .section-title:before {
 	.lf-num {
 		left:inherit;
 		right:0;
-	}	
+	}
 }
 @media only screen and (max-width: 768px) {
 	section.parallax-section.parallax-sec-half-left .bg,
@@ -6472,7 +6464,6 @@ section.parallax-section .section-title:before {
 	section.parallax-section.parallax-sec-half-left:before {
 		width: 70%;
 	}
-	.piechart,
 	.process-wrap li,
 	.half-bg,
 	.share-wrapper:before {
@@ -6797,19 +6788,23 @@ section.parallax-section .section-title:before {
 .withMargin {
 	margin-left: 100px;
 }
-.modal-3{
- a{
+
+.modal-3
+a {
 	margin-left: 3px;
 	padding: 0;
 	width: 30px;
 	height: 30px;
 	line-height: 30px;
-	@include border-radius(100%);
- }
- &:hover{
-	 background-color: #4DAD16;
- }
-&.active, & :active{
-			   background-color: #37B247;
-		   }
+border-radius(100 %);
 }
+a :hover {
+	background-color: #4DAD16;
+}
+
+.active :active {
+	background-color: #37B247;
+}
+
+
+

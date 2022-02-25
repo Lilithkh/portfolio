@@ -460,21 +460,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -o-transition: -o-transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
   transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;
 }
-.lg-outer .lg-thumb-outer.lg-grab .lg-thumb-item {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
-}
-.lg-outer .lg-thumb-outer.lg-grabbing .lg-thumb-item {
-  cursor: move;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -o-grabbing;
-  cursor: -ms-grabbing;
-  cursor: grabbing;
-}
+
 .lg-outer .lg-thumb-outer.lg-dragging .lg-thumb {
   -webkit-transition-duration: 0s !important;
   transition-duration: 0s !important;
@@ -489,7 +475,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: -5px;
 }
 .lg-outer .lg-thumb-item {
-  border-radius: 5px;
   cursor: pointer;
   float: left;
   overflow: hidden;
@@ -582,29 +567,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 1080;
   cursor: pointer;
 }
-.lg-outer .lg-has-vimeo .lg-video-play {
-  background: url("../img/vimeo-play.png") no-repeat scroll 0 0 transparent;
-}
-.lg-outer .lg-has-vimeo:hover .lg-video-play {
-  background: url("../img/vimeo-play.png") no-repeat scroll 0 -58px transparent;
-}
-.lg-outer .lg-has-html5 .lg-video-play {
-  background: transparent url("../img/video-play.png") no-repeat scroll 0 0;
-  height: 64px;
-  margin-left: -32px;
-  margin-top: -32px;
-  width: 64px;
-  opacity: 0.8;
-}
+
 .lg-outer .lg-has-html5:hover .lg-video-play {
   opacity: 1;
 }
-.lg-outer .lg-has-youtube .lg-video-play {
-  background: url("../img/youtube-play.png") no-repeat scroll 0 0 transparent;
-}
-.lg-outer .lg-has-youtube:hover .lg-video-play {
-  background: url("../img/youtube-play.png") no-repeat scroll 0 -60px transparent;
-}
+
 .lg-outer .lg-video-object {
   width: 100% !important;
   height: 100% !important;
@@ -843,21 +810,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   transition-duration: 0s !important;
   opacity: 1;
 }
-.lg-outer.lg-grab img.lg-object {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
-}
-.lg-outer.lg-grabbing img.lg-object {
-  cursor: move;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -o-grabbing;
-  cursor: -ms-grabbing;
-  cursor: grabbing;
-}
+
+
 .lg-outer .lg {
   height: 100%;
   width: 100%;
@@ -876,10 +830,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   top: 0;
   white-space: nowrap;
 }
-.lg-outer .lg-item {
-  background: url("../images/loading.gif") no-repeat scroll center center transparent;
-  display: none !important;
-}
+
 .lg-outer.lg-css3 .lg-prev-slide, .lg-outer.lg-css3 .lg-current, .lg-outer.lg-css3 .lg-next-slide {
   display: inline-block !important;
 }
@@ -1070,12 +1021,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
  
     bottom: 3px;
     /* there must be 'bottom' for ps-scrollbar-x-rail */
-    height: 8px; 
-	display:none; }
+    height: 8px;
+  }
+
     .ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x {
       position: absolute;
       /* please don't change 'position' */
-      background-color: none;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
@@ -1098,12 +1049,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     right: 9px;
     /* there must be 'right' for ps-scrollbar-y-rail */
     width: 4px;
- display:none; 
  
 }
     .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
       position: absolute;
-	  left:
       /* please don't change 'position' */
       background-color: #aaa;
       -webkit-border-radius: 2px;
@@ -1127,63 +1076,4 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .nav-holder.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y{
 	height:auto !important;
-}
-/*------ selectbox------------------------------------------------*/
-.selectbox {
-	vertical-align: middle;
-	cursor: pointer;
-	width: 100%;
-}
-.selectbox .select {
-	width: 100%;
-	height: 30px;
-	padding: 0 45px 0 20px;
-	margin-top:18px; 
-}
-.selectbox .select .text {
-	display: block;
-	width: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	font-size:13px;
-	text-align:left;
-	position:relative;
-	top:-4px;
-}
-.selectbox .trigger {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 34px;
-	height: 100%;
-}
-.selectbox .trigger .arrow {
-	position: absolute;
-	top: 4px;
-	right: 12px;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid #666;
-	width: 0;
-	height: 0;
-	overflow: hidden;
-}
-.selectbox:hover .arrow {
-	opacity:0.7;
-}
-.selectbox .dropdown {
-	top: 53px;
-	width: 100%;
-	margin: 0;
-	padding: 10px 12px;
-	background: #FFF;
-	border: 1px solid #eee;
-	border-radius: 4px;
-	text-align:left;
-}
-.selectbox li {
-	padding: 8px 10px 8px;
-	color: #666;
-	font-size:13px;
-	border-radius:2px;
 }
