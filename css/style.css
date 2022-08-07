@@ -192,12 +192,19 @@ blockquote p {
 
 }
 
-.solution {
+.solution  {
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    list-style-type: circle;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 24px;
+    text-align: start;
+    color: #666666;
 }
-
+.solution li{
+    margin-bottom: 24px;
+}
 .caption {
     color: white;
 }
@@ -212,7 +219,6 @@ blockquote p {
 }
 
 .process-wrap ul li {
-    width: 50%;
     float: left;
     position: relative;
     padding-bottom: 40px;
@@ -229,15 +235,11 @@ blockquote p {
     display: flex;
     flex-direction: row-reverse;
 }
-
-.prod-image img {
-    max-width: 100%;
-    height: auto;
-}
-
 .hero-section {
     padding: 250px 0 450px;
 }
+
+
 
 .content {
     float: left;
@@ -2583,6 +2585,11 @@ section.parallax-section .section-title:before {
     position: relative;
 }
 
+.process-wrap ul li {
+    float: left;
+    position: relative;
+    padding-bottom: 40px;
+}
 .time-line-icon i {
     font-size: 34px;
 }
@@ -4692,6 +4699,8 @@ section.parallax-section .section-title:before {
     padding: 15px 30px 35px 0;
 }
 
+
+
 .process-wrap li .process-details,
 .serv-wrap .process-details {
     text-align: left;
@@ -4718,6 +4727,10 @@ section.parallax-section .section-title:before {
 .serv-wrap .process-details ul li {
     margin-top: 10px;
     margin-right: 10px;
+}
+
+.the-project ul li{
+    width: 50%;
 }
 
 .process-wrap li h4,
