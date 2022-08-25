@@ -270,4 +270,4 @@
     }
 	
 	
-})(this.jQuery);	
+})(this.jQuery);
