@@ -192,7 +192,7 @@ blockquote p {
 
 }
 
-.solution  {
+.solution {
     display: flex;
     flex-direction: column;
     list-style-type: circle;
@@ -202,9 +202,27 @@ blockquote p {
     text-align: start;
     color: #666666;
 }
-.solution li{
+
+.colors {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.process-details .colors h4 {
+    margin: 0;
+    align-items: start;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    color: #666;
+    padding: 0;
+}
+
+.solution li {
     margin-bottom: 24px;
 }
+
 .caption {
     color: white;
 }
@@ -235,10 +253,10 @@ blockquote p {
     display: flex;
     flex-direction: row-reverse;
 }
+
 .hero-section {
     padding: 250px 0 450px;
 }
-
 
 
 .content {
@@ -2072,7 +2090,6 @@ section.parallax-section.parallax-sec-half-left:before {
 }
 
 section.parallax-section.parallax-sec-half-right:after {
-    content: '';
     position: absolute;
     bottom: 150px;
     right: 60%;
@@ -2590,6 +2607,7 @@ section.parallax-section .section-title:before {
     position: relative;
     padding-bottom: 40px;
 }
+
 .time-line-icon i {
     font-size: 34px;
 }
@@ -3895,7 +3913,6 @@ section.parallax-section .section-title:before {
 }
 
 
-
 .show-case-item {
     position: relative;
     padding: 0 20px;
@@ -4700,7 +4717,6 @@ section.parallax-section .section-title:before {
 }
 
 
-
 .process-wrap li .process-details,
 .serv-wrap .process-details {
     text-align: left;
@@ -4729,7 +4745,7 @@ section.parallax-section .section-title:before {
     margin-right: 10px;
 }
 
-.the-project ul li{
+.the-project ul li {
     width: 50%;
 }
 
@@ -7939,12 +7955,9 @@ a {
 border-radius(100 %);
 }
 
-a :hover {
-    background-color: #4DAD16;
-}
 
 .active :active {
-    background-color: #37B247;
+    background-color: #ce13a8;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
@@ -7954,7 +7967,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 
 
 .heading {
@@ -7982,12 +7994,14 @@ body {
     margin: 0 auto;
     width: 100%;
 }
+
 .container-general .gallery-wrap {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 70vh;
 }
+
 .container-general .gallery-wrap .item {
     flex: 1;
     height: 100%;
@@ -7996,28 +8010,13 @@ body {
     background-repeat: none;
     transition: all 0.8s ease;
 }
+
 .container-general .gallery-wrap .item:hover {
     flex: 7;
 }
 
-.wrap-effect-1 .item:first-of-type {
-    background-image: url(../images/project/3.jpg);
-}
-.wrap-effect-1 .item:nth-of-type(2) {
-    background-image: url(../images/project/2.jpg);
-}
-.wrap-effect-1 .item:nth-of-type(3) {
-    background-image: url(../images/project/1.jpg);
-}
-.wrap-effect-1 .item:nth-of-type(4) {
-    background-image: url(../images/project/4.jpg);
-}
-.wrap-effect-1 .item:last-of-type {
-    background-image: url(../images/project/5.jpg);
-}
-
 .inspire {
-    border: 1px solid rgba(22, 76, 167, 0.6);
+    border: 1px solid #ce13a8;
     border-radius: 10px;
     cursor: pointer;
     overflow: hidden;
@@ -8026,8 +8025,9 @@ body {
     margin: 10px;
     padding: 10px;
 }
+
 .inspire:after {
-    background: #38ef7d;
+    background: #ce13a8;
     content: "";
     height: 155px;
     left: -75px;
@@ -8039,6 +8039,7 @@ body {
     width: 50px;
     z-index: -10;
 }
+
 .inspire:hover:after {
     left: 120%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
