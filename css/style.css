@@ -2394,7 +2394,7 @@ section.parallax-section .section-title:before {
 
 .pr-title {
     padding: 0 20px 0 30px;
-    margin-bottom: 155px
+    margin-bottom: 40px
 }
 
 .pr-title:before {
@@ -3040,6 +3040,7 @@ section.parallax-section .section-title:before {
     width: 100%;
     position: relative;
     margin-top: 79px;
+    height: 100%;
 }
 
 .gallery-filter {
@@ -3052,7 +3053,7 @@ section.parallax-section .section-title:before {
     height: auto;
     position: relative;
     overflow: hidden;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #2C2D32;
 
 }
 
@@ -3105,9 +3106,6 @@ section.parallax-section .section-title:before {
     transition: all 2000ms cubic-bezier(.19, 1, .22, 1) 0ms;
 }
 
-.gallery-item:hover img {
-    opacity: 0.7;
-}
 
 .nav-1 .folio-counter {
     float: left;
