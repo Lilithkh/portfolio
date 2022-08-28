@@ -6092,6 +6092,7 @@ section.parallax-section .section-title:before {
 
 /*-------------Map contacts---------------------------------------*/
 .map-container {
+
     float: left;
     width: 100%;
     position: relative;
