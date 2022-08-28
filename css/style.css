@@ -7541,7 +7541,20 @@ section.parallax-section .section-title:before {
     .color-item{
         flex-wrap: wrap;
     }
+    .projectstatement{
+        flex-wrap: wrap;
+        margin: 0;
+    }
 
+.prod-image{
+    width: 100%;
+    flex-direction: inherit ;
+    justify-content: center;
+
+}
+.statement{
+    margin: 0;
+}
     .half-hero-wrap h1 {
         font-size: 26px;
         line-height: 40px;
